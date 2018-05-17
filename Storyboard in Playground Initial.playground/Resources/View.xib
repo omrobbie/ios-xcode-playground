@@ -23,12 +23,34 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CdH-Jl-ncu">
-                    <rect key="frame" x="20" y="256" width="300" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruX-zj-Vi3" userLabel="Card View">
+                    <rect key="frame" x="20" y="276" width="300" height="250"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CdH-Jl-ncu" userLabel="Cover Image">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="6hb-Gd-i9d"/>
+                        <constraint firstAttribute="bottom" secondItem="CdH-Jl-ncu" secondAttribute="bottom" id="E1x-LL-IzL"/>
+                        <constraint firstItem="CdH-Jl-ncu" firstAttribute="leading" secondItem="ruX-zj-Vi3" secondAttribute="leading" id="I0z-KR-SbA"/>
+                        <constraint firstAttribute="width" constant="300" id="Lea-8m-lS2"/>
+                        <constraint firstAttribute="trailing" secondItem="CdH-Jl-ncu" secondAttribute="trailing" id="TQC-PV-WPx"/>
+                        <constraint firstItem="CdH-Jl-ncu" firstAttribute="top" secondItem="ruX-zj-Vi3" secondAttribute="top" id="kK6-9h-rWk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ruX-zj-Vi3" firstAttribute="leading" secondItem="MGs-p0-F6s" secondAttribute="leading" constant="20" id="aiT-PL-kJN"/>
+                <constraint firstItem="ruX-zj-Vi3" firstAttribute="top" secondItem="MGs-p0-F6s" secondAttribute="top" constant="256" id="heS-PZ-W0n"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="MGs-p0-F6s"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
