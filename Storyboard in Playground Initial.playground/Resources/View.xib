@@ -29,15 +29,33 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CdH-Jl-ncu" userLabel="Cover Image">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard in Playgound" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-3T-N3t" userLabel="Title">
+                            <rect key="frame" x="16" y="16" width="268" height="76.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A deeper look at Storyboard and the view hierarchy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8u4-72-FGd" userLabel="Subtitle">
+                            <rect key="frame" x="16" y="193" width="268" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="6hb-Gd-i9d"/>
                         <constraint firstAttribute="bottom" secondItem="CdH-Jl-ncu" secondAttribute="bottom" id="E1x-LL-IzL"/>
                         <constraint firstItem="CdH-Jl-ncu" firstAttribute="leading" secondItem="ruX-zj-Vi3" secondAttribute="leading" id="I0z-KR-SbA"/>
+                        <constraint firstAttribute="trailing" secondItem="MVN-3T-N3t" secondAttribute="trailing" constant="16" id="IRU-1y-4rO"/>
                         <constraint firstAttribute="width" constant="300" id="Lea-8m-lS2"/>
+                        <constraint firstItem="8u4-72-FGd" firstAttribute="leading" secondItem="ruX-zj-Vi3" secondAttribute="leading" constant="16" id="Ryp-hg-Scg"/>
                         <constraint firstAttribute="trailing" secondItem="CdH-Jl-ncu" secondAttribute="trailing" id="TQC-PV-WPx"/>
+                        <constraint firstItem="MVN-3T-N3t" firstAttribute="top" secondItem="ruX-zj-Vi3" secondAttribute="top" constant="16" id="bSr-SY-oLw"/>
+                        <constraint firstAttribute="trailing" secondItem="8u4-72-FGd" secondAttribute="trailing" constant="16" id="ePM-j8-lSy"/>
+                        <constraint firstItem="CdH-Jl-ncu" firstAttribute="bottom" secondItem="8u4-72-FGd" secondAttribute="bottom" constant="16" id="fpr-cb-wCK"/>
                         <constraint firstItem="CdH-Jl-ncu" firstAttribute="top" secondItem="ruX-zj-Vi3" secondAttribute="top" id="kK6-9h-rWk"/>
+                        <constraint firstItem="MVN-3T-N3t" firstAttribute="leading" secondItem="ruX-zj-Vi3" secondAttribute="leading" constant="16" id="v6Q-yN-q5Q"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
