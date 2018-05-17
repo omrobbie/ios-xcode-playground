@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,12 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Chapters Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="v7q-Mi-GYj">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruX-zj-Vi3" userLabel="Card View">
-                    <rect key="frame" x="20" y="276" width="300" height="250"/>
+                    <rect key="frame" x="20" y="256" width="300" height="250"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CdH-Jl-ncu" userLabel="Cover Image">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
@@ -41,6 +36,20 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-pl-Jui" userLabel="Close Button">
+                            <rect key="frame" x="252" y="20" width="28" height="28"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="5VJ-hL-bEA"/>
+                                <constraint firstAttribute="width" constant="28" id="p2Y-OM-8mT"/>
+                            </constraints>
+                            <state key="normal" image="Action-Close.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -51,7 +60,9 @@
                         <constraint firstAttribute="width" constant="300" id="Lea-8m-lS2"/>
                         <constraint firstItem="8u4-72-FGd" firstAttribute="leading" secondItem="ruX-zj-Vi3" secondAttribute="leading" constant="16" id="Ryp-hg-Scg"/>
                         <constraint firstAttribute="trailing" secondItem="CdH-Jl-ncu" secondAttribute="trailing" id="TQC-PV-WPx"/>
+                        <constraint firstAttribute="trailing" secondItem="LPf-pl-Jui" secondAttribute="trailing" constant="20" id="bKa-Jw-Seh"/>
                         <constraint firstItem="MVN-3T-N3t" firstAttribute="top" secondItem="ruX-zj-Vi3" secondAttribute="top" constant="16" id="bSr-SY-oLw"/>
+                        <constraint firstItem="LPf-pl-Jui" firstAttribute="top" secondItem="ruX-zj-Vi3" secondAttribute="top" constant="20" id="eDd-FN-0ah"/>
                         <constraint firstAttribute="trailing" secondItem="8u4-72-FGd" secondAttribute="trailing" constant="16" id="ePM-j8-lSy"/>
                         <constraint firstItem="CdH-Jl-ncu" firstAttribute="bottom" secondItem="8u4-72-FGd" secondAttribute="bottom" constant="16" id="fpr-cb-wCK"/>
                         <constraint firstItem="CdH-Jl-ncu" firstAttribute="top" secondItem="ruX-zj-Vi3" secondAttribute="top" id="kK6-9h-rWk"/>
@@ -63,17 +74,21 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Chapters Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="v7q-Mi-GYj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="ruX-zj-Vi3" firstAttribute="leading" secondItem="MGs-p0-F6s" secondAttribute="leading" constant="20" id="aiT-PL-kJN"/>
-                <constraint firstItem="ruX-zj-Vi3" firstAttribute="top" secondItem="MGs-p0-F6s" secondAttribute="top" constant="256" id="heS-PZ-W0n"/>
+                <constraint firstItem="ruX-zj-Vi3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="aiT-PL-kJN"/>
+                <constraint firstItem="ruX-zj-Vi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="256" id="heS-PZ-W0n"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="MGs-p0-F6s"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
     <resources>
+        <image name="Action-Close.png" width="13" height="13"/>
         <image name="Chapters Screen.png" width="375" height="667"/>
         <image name="Cover.jpg" width="2880" height="1600"/>
     </resources>
