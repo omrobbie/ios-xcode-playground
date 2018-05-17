@@ -27,6 +27,9 @@
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CdH-Jl-ncu" userLabel="Cover Image">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="420" id="8VH-I5-P2w"/>
+                            </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard in Playgound" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-3T-N3t" userLabel="Title">
                             <rect key="frame" x="16" y="16" width="268" height="76.5"/>
@@ -58,7 +61,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="6hb-Gd-i9d" userLabel="Card Layout Height"/>
-                        <constraint firstAttribute="bottom" secondItem="CdH-Jl-ncu" secondAttribute="bottom" id="E1x-LL-IzL" userLabel="Cover Image Bottom"/>
+                        <constraint firstAttribute="bottom" secondItem="CdH-Jl-ncu" secondAttribute="bottom" priority="998" id="E1x-LL-IzL" userLabel="Cover Image Bottom"/>
                         <constraint firstItem="CdH-Jl-ncu" firstAttribute="leading" secondItem="ruX-zj-Vi3" secondAttribute="leading" id="I0z-KR-SbA" userLabel="Cover Image Leading"/>
                         <constraint firstAttribute="trailing" secondItem="MVN-3T-N3t" secondAttribute="trailing" constant="16" id="IRU-1y-4rO"/>
                         <constraint firstAttribute="width" constant="300" id="Lea-8m-lS2" userLabel="Card Layout Width"/>
@@ -81,8 +84,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="ruX-zj-Vi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="999" id="L9K-Ir-Zd8"/>
+                <constraint firstItem="ruX-zj-Vi3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" priority="999" id="VRs-Et-zoR"/>
+                <constraint firstAttribute="trailing" secondItem="ruX-zj-Vi3" secondAttribute="trailing" priority="999" id="YV7-xv-BfD"/>
                 <constraint firstItem="ruX-zj-Vi3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="aiT-PL-kJN" userLabel="Card Layout Leading"/>
                 <constraint firstItem="ruX-zj-Vi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="256" id="heS-PZ-W0n" userLabel="Card Layout Top"/>
+                <constraint firstAttribute="bottom" secondItem="ruX-zj-Vi3" secondAttribute="bottom" priority="999" id="qSy-lm-0a4"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
